@@ -1,0 +1,43 @@
+.users-section {
+    margin-top: 150px;
+
+    &-block {
+        height: 200px;
+        background: #DDDDDD;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-flexbox {
+            display: flex;
+            align-items: center;
+            gap: 0 230px;
+
+            &-innerBox {
+                display: flex;         
+                gap: 0 36.5px;
+
+                &-textBox {
+                    &__title {
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 25px;
+                        line-height: 30px;
+                        color: #0B132A;
+                    }
+
+                    &__text {
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: #4F5665;
+                    }
+                }
+            }
+        }
+    }
+}
