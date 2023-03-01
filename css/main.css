@@ -169,11 +169,22 @@ body a {
   .hero-section .hero-section-block-flexbox-textBox__btn {
     margin: 0 auto;
   }
+  .hero-section .hero-section-block .secondFlex {
+    flex-direction: column-reverse;
+  }
 }
 @media (max-width: 520px) {
   .hero-section .hero-section-block-flexbox-textBox-box__title {
     font-size: 28px;
     line-height: 32px;
+  }
+  .hero-section .hero-section-block-flexbox-textBox-box-secondBox {
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .hero-section .hero-section-block-flexbox-textBox-box-secondBox-innerBox {
+    text-align: center;
+    margin: 0 auto;
   }
   .hero-section .hero-section-block-flexbox-textBox__btn {
     width: 95%;
@@ -187,7 +198,7 @@ body a {
   max-width: 383px;
 }
 .margin-top .text {
-  width: 447px;
+  max-width: 447px;
 }
 
 .users-section {
@@ -249,12 +260,6 @@ body a {
 .choose-plan-section {
   margin-top: 200px;
 }
-.choose-plan-section-block {
-  display: flex;
-  flex-direction: column;
-  gap: 60px 0;
-  align-items: center;
-}
 .choose-plan-section-block-textBox {
   display: flex;
   flex-direction: column;
@@ -269,6 +274,7 @@ body a {
   font-size: 35px;
   line-height: 50px;
   color: #0B132A;
+  text-align: center;
 }
 .choose-plan-section-block-textBox__text {
   font-family: "Rubik";
@@ -277,17 +283,20 @@ body a {
   font-size: 16px;
   line-height: 30px;
   color: #4F5665;
-  width: 555px;
+  max-width: 555px;
   text-align: center;
 }
 .choose-plan-section-block-flexbox {
   display: flex;
   align-items: center;
-  gap: 0 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px 0;
+  padding-top: 40px;
 }
 .choose-plan-section-block-flexbox-innerBox {
-  width: 330px;
-  height: 760px;
+  min-width: 330px;
+  min-height: 760px;
   border: 2px solid #DDDDDD;
   border-radius: 10px;
   display: flex;
@@ -350,6 +359,19 @@ body a {
 }
 .choose-plan-section-block-flexbox-innerBox .gap50 {
   gap: 70px 0;
+}
+@media (max-width: 1106px) {
+  .choose-plan-section .choose-plan-section-block-flexbox-innerBox:nth-child(3) {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 676px) {
+  .choose-plan-section .choose-plan-section-block-flexbox {
+    justify-content: center;
+  }
+  .choose-plan-section .choose-plan-section-block-flexbox-innerBox:nth-child(3) {
+    margin: 0;
+  }
 }
 
 .network-section {

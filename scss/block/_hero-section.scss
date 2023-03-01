@@ -101,6 +101,10 @@
                         }
                     }
                 }
+
+                .secondFlex {
+                    flex-direction: column-reverse;
+                }
             }
         }
     }
@@ -114,6 +118,16 @@
                             &__title {
                                 font-size: 28px;
                                 line-height: 32px;
+                            }
+
+                            &-secondBox {
+                                justify-content: center;
+                                margin: 0 auto;
+        
+                                &-innerBox {
+                                    text-align: center;
+                                    margin: 0 auto;
+                                }
                             }
                         }
 
@@ -130,11 +144,13 @@
 .margin-top {
     margin-top: 200px;
 
+
     .fs-2 {
         max-width: 383px;
     }
 
     .text {
-        width: 447px;
+        max-width: 447px;
     }
+
 }
