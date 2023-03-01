@@ -23,7 +23,7 @@
                 line-height: 50px;
                 text-align: center;
                 color: #0B132A;
-                width: 383px;
+                max-width: 383px;
             }
 
             &__text {
@@ -34,7 +34,25 @@
                 line-height: 30px;
                 text-align: center;
                 color: #4F5665;
-                width: 555px;
+                max-width: 555px;
+            }
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .network-section {
+            &-block {
+                &__img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 700px) {
+        .network-section {
+            &-block {
+                gap: 60px 0;
             }
         }
     }

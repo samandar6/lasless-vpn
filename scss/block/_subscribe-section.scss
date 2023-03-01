@@ -5,20 +5,19 @@
     justify-content: center;
 
     &-block {
-        width: 1140px;
-        height: 233px;
+        max-width: 1140px;
+        min-height: 233px;
         background: #DDDDDD;
         border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 58.5px 70px;
         z-index: -1;
 
         &-flexbox {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 0 378px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
 
             &-textBox {
                 display: flex;
@@ -32,7 +31,7 @@
                     font-size: 35px;
                     line-height: 45px;
                     color: #0B132A;
-                    width: 371px;
+                    max-width: 371px;
                 }
 
                 &__text {
@@ -67,6 +66,16 @@
                 background-color: #fff;
                 color: #F53838;
 
+            }
+        }
+    }
+    
+    @media (max-width: 637px) {
+        .subscribe-section-block {
+            text-align: center;
+
+            &-flexbox {
+                justify-content: center;
             }
         }
     }

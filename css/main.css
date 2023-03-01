@@ -6,6 +6,7 @@
 
 body .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 body li {
@@ -399,7 +400,7 @@ body a {
   line-height: 50px;
   text-align: center;
   color: #0B132A;
-  width: 383px;
+  max-width: 383px;
 }
 .network-section-block-textBox__text {
   font-family: "Rubik";
@@ -409,33 +410,35 @@ body a {
   line-height: 30px;
   text-align: center;
   color: #4F5665;
-  width: 555px;
+  max-width: 555px;
+}
+@media (max-width: 1100px) {
+  .network-section .network-section-block__img {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .network-section .network-section-block {
+    gap: 60px 0;
+  }
 }
 
 .brands-section {
   margin-top: 150px;
 }
-.brands-section-block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .brands-section-block-flexbox {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0 47.5px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.brands-section-block-flexbox__img {
+  max-width: 190px;
+  margin: 0 auto;
 }
 
 .customers-section {
   margin-top: 109px;
-}
-.customers-section-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 60px 0;
 }
 .customers-section-block-textBox {
   display: flex;
@@ -451,7 +454,7 @@ body a {
   line-height: 50px;
   text-align: center;
   color: #0B132A;
-  width: 447px;
+  max-width: 447px;
 }
 .customers-section-block-textBox__text {
   font-family: "Rubik";
@@ -461,20 +464,22 @@ body a {
   line-height: 30px;
   text-align: center;
   color: #4F5665;
-  width: 555px;
+  max-width: 555px;
 }
 .customers-section-block-flexbox {
   display: flex;
   justify-content: center;
-  gap: 0 50px;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  gap: 30px;
 }
 .customers-section-block-flexbox-innerBox {
-  width: 400px;
-  height: 230px;
+  max-width: 400px;
+  min-height: 230px;
+  padding: 20px;
   background: #FFFFFF;
   border: 2px solid #DDDDDD;
   border-radius: 10px;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -483,7 +488,7 @@ body a {
 .customers-section-block-flexbox-innerBox-row {
   display: flex;
   align-items: center;
-  gap: 0 108px;
+  justify-content: space-between;
 }
 .customers-section-block-flexbox-innerBox-row-nameBox {
   display: flex;
@@ -526,15 +531,19 @@ body a {
   font-size: 16px;
   line-height: 30px;
   color: #0B132A;
-  width: 340px;
+  max-width: 340px;
   margin: 0;
-  height: 100px;
+  min-height: 100px;
+  padding-top: 20px;
 }
 .customers-section-block-buttonBox {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px 300px;
+  flex-wrap: wrap;
+  padding-top: 40px;
 }
 .customers-section-block-buttonBox-miniButtons {
   display: flex;
@@ -579,20 +588,19 @@ body a {
   justify-content: center;
 }
 .subscribe-section-block {
-  width: 1140px;
-  height: 233px;
+  max-width: 1140px;
+  min-height: 233px;
   background: #DDDDDD;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 58.5px 70px;
   z-index: -1;
 }
 .subscribe-section-block-flexbox {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0 378px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .subscribe-section-block-flexbox-textBox {
   display: flex;
@@ -606,7 +614,7 @@ body a {
   font-size: 35px;
   line-height: 45px;
   color: #0B132A;
-  width: 371px;
+  max-width: 371px;
 }
 .subscribe-section-block-flexbox-textBox__text {
   font-family: "Rubik";
@@ -637,22 +645,31 @@ body a {
   background-color: #fff;
   color: #F53838;
 }
+@media (max-width: 637px) {
+  .subscribe-section .subscribe-section-block {
+    text-align: center;
+  }
+  .subscribe-section .subscribe-section-block-flexbox {
+    justify-content: center;
+  }
+}
 
 .footer {
   width: 1440px;
-  height: 563.12px;
+  width: 100%;
+  min-height: 563.12px;
   background: #F8F8F8;
   margin-top: -120px;
   z-index: -2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 180px 150px;
 }
 .footer-block {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 0 230px;
   padding-top: 100px;
+  gap: 40px 0;
 }
 .footer-block-logoBox {
   display: flex;
@@ -671,7 +688,7 @@ body a {
   font-size: 16px;
   line-height: 30px;
   color: #4F5665;
-  width: 340px;
+  max-width: 340px;
 }
 .footer-block-logoBox__text {
   font-family: "Rubik";
@@ -683,8 +700,8 @@ body a {
 }
 .footer-block-navBox {
   display: flex;
-  align-items: flex-start;
-  gap: 0 126px;
+  flex-wrap: wrap;
+  gap: 50px 126px;
 }
 .footer-block-navBox .footer-block-nav {
   display: flex;
@@ -711,4 +728,36 @@ body a {
   font-size: 16px;
   line-height: 30px;
   color: #4F5665;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 180px 0;
+  }
+  .footer-block {
+    justify-content: center;
+  }
+  .footer-block-logoBox {
+    justify-content: center;
+  }
+  .footer-block-logoBox-box {
+    justify-content: center;
+  }
+}
+@media (max-width: 340px) {
+  .footer {
+    padding: 180px 0;
+  }
+  .footer-block {
+    justify-content: center;
+  }
+  .footer-block-logoBox {
+    justify-content: center;
+  }
+  .footer-block-logoBox-box {
+    justify-content: center;
+  }
+  .footer-block-navBox {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=main.css.map */
