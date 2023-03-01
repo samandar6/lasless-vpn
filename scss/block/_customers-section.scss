@@ -1,0 +1,166 @@
+.customers-section {
+    margin-top: 109px;
+
+    &-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px 0;
+
+        &-textBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px 0;
+
+            &__title {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 35px;
+                line-height: 50px;
+                text-align: center;
+                color: #0B132A;
+                width: 447px;
+            }
+    
+            &__text {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
+                text-align: center;
+                color: #4F5665;
+                width: 555px;
+            }
+        }
+
+        &-flexbox {
+            display: flex;
+            justify-content: center;
+            gap: 0 50px;
+
+            &-innerBox {
+                width: 400px;
+                height: 230px;
+                background: #FFFFFF;
+                border: 2px solid #DDDDDD;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px 0;
+
+                &-row {
+                    display: flex;
+                    align-items: center;
+                    gap: 0 108px;
+
+                    &-nameBox {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 20px;
+
+                        &-textBox {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px 0;
+                            
+                            &__title {
+                                margin: 0;
+                                font-family: 'Rubik';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 18px;
+                                color: #0B132A;
+                            }
+
+                            &__text {
+                                margin: 0;
+                                font-family: 'Rubik';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                color: #4F5665; 
+                            }
+                        }
+                    }
+
+                    &-starBox {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 11px;
+                        
+                        &__text {
+                            margin: 0;
+
+                        }
+                    }
+                }
+
+                &__text {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #0B132A;
+                    width: 340px;
+                    margin: 0;
+                    height: 100px;
+                }
+            }
+        }
+
+        &-buttonBox {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+
+            &-miniButtons {
+                display: flex;
+                align-items: center;
+                gap: 0 15px;
+
+                &__longBtn {
+                    width: 45px;
+                    height: 15px;
+                    background: #F53838;   
+                    border-radius: 20px;
+                }
+
+                &__shortBtn {
+                    width: 15px;
+                    height: 15px;
+                    background: #DDE0E4;
+                    border-radius: 50%;
+                }
+            }
+
+            &-bigButtons {
+                display: flex;
+                align-items: center;
+                gap: 0 20px;
+
+                &__btn {
+                    width: 60px;
+                    height: 60px;
+                    display: inline-block;
+                    border: 2px solid #F53838;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .rotate {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}

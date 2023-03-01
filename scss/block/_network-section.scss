@@ -1,0 +1,41 @@
+.network-section {
+    margin-top: 150px;
+
+    &-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 150px 0;
+
+        &-textBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px 0;
+
+            &__title {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 35px;
+                line-height: 50px;
+                text-align: center;
+                color: #0B132A;
+                width: 383px;
+            }
+
+            &__text {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
+                text-align: center;
+                color: #4F5665;
+                width: 555px;
+            }
+        }
+    }
+}
